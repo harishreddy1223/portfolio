@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <nav>
+        <div class="left">BANA's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Project</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">HARISH</span>
+                <div>
+                    and I am a passionate <span id="element"></span>
+                </div> 
+            </div>
+            <div class="rightSection">
+                <img src="image.avif" alt="Profile Picture">
+            </div>
+        </section>
+        <hr class="hr">
+        <h1>Academic Background</h1>
+        <section class="secondSection">
+            <div class="box">
+                <div class="academic-info">
+                    <p>I am a student at Chandigarh University, currently in the 3rd year of the CSE branch with a 7.7 CGPA.</p>
+                    <p>12th Grade: 94%</p>
+                    <p>10th Grade: 90%</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Node.js</li>
+                <li>Spring Framework</li>
+                <li>React.js</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Connect with me:</p>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/bana-harish-reddy-ba73122b2/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/harishreddy1223" target="_blank">GitHub</a></li>
+        </ul>
+    </footer>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Backend Developer', 'Full Stack Developer'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
+
+
